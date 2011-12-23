@@ -1,0 +1,56 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:08:45
+project --topLevelPackage calendar --projectName calendar --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 20:08:46
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:08:52
+hint
+persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE
+hint
+entity --class ~.model.DayOfWeek
+entity --class ~.model.TimeFrame
+entity --class ~.model.OpenDay
+entity --class ~.model.OpeningTimeWeek
+hint
+hint topics
+hint controllers
+web mvc setup
+web mvc all --package ~.web
+web mvc all --package ~.web
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 20:45:48
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:47:14
+focus --class calendar.model.OpeningTime
+// [failed] field date --fieldName begin --type java.util.Date
+field enum --type calendar.model.DayOfWeek dayow
+field date --fieldName timeBegin --type java.util.Date
+help field data
+hint
+hint fields
+hint fields date
+hint fields
+// [failed] field date --type java.util.Date --fieldName begin
+field date --type java.util.Date --fieldName timeBegin --dateTimeFormatPattern hh:mm
+field date --type java.util.Date --fieldName timeBegin --dateTimeFormatPattern hh:mm --timeFormat SHORT 
+// [failed] field date --type java.util.Date --fieldName timeBegin --timeFormat SHORT 
+field date --type java.util.Date --fieldName timeBegin2 --timeFormat SHORT 
+field date --type java.util.Date --fieldName timeBegin3 --persistenceType JPA_TIME 
+field date --type java.util.Calendar --fieldName date1 --dateFormat NONE --timeFormat SHORT 
+field date --type java.util.Date --fieldName test --persistenceType JPA_TIMESTAMP 
+field string --fieldName tsasd --regexp ^([0-1][0-9]|[2][0-3]):([0-5][0-9])$
+field set --fieldName test --type calendar.model.OpeningTime --cardinality ONE_TO_MANY
+focus --class calendar.model.OpeningTimeWeek
+field set --fieldName toppings --type ~.model.OpeningTime
+field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek
+focus --class calendar.model.OpeningTime 
+field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek
+// [failed] field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek --enumType STRING 
+field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek --enumType STRING 
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 22:55:34
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 19:44:22
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 20:22:29
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 20:30:47
+enum type --class ~model.WeekDays
+enum constant --name Monday
+enum constant --name Tuesday
+focus  --class calendar.model.OpeningTime
+// [failed] field enum day --type ~.model.WeekDays --enumType STRING
+field enum weekDay --type ~.model.WeekDays --enumType STRING
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 23:22:28

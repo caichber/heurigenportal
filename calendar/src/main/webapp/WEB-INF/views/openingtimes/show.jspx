@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_calendar_model_OpeningTime" object="${openingtime}" path="/openingtimes" z="B51wCkZARyyZJK//Pg+6yLUYI0A=">
+        <field:display field="beginTime" id="s_calendar_model_OpeningTime_beginTime" object="${openingtime}" z="S/ASkMMU+4AXBT3Ztf9S3eIODvE="/>
+        <field:display field="endTime" id="s_calendar_model_OpeningTime_endTime" object="${openingtime}" z="cKuf4wINgH1RPZ7wmLrI6mJjpdk="/>
+        <field:display field="dayOfWeek" id="s_calendar_model_OpeningTime_dayOfWeek" object="${openingtime}" z="JvrtHvVuWGmbbOwo4nS6PRM0pRw="/>
+    </page:show>
+</div>
