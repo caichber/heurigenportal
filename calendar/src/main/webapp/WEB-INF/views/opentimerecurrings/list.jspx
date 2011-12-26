@@ -9,7 +9,7 @@
             <table:column id="c_calendar_model_OpenTimeRecurring_beginTime2" property="beginTime2" z="Hv2jMDKpPzJiLFUwaDROftea6/g="/>
             <table:column id="c_calendar_model_OpenTimeRecurring_endTime2" property="endTime2" z="0eDP2NcwNSiT6RVU3lV1i4ya9y8="/>
             <table:column id="c_calendar_model_OpenTimeRecurring_beginTime3" property="beginTime3" z="3zWdkvL0JGtWPckKvsKFDilRCf8="/>
-            <table:column id="c_calendar_model_OpenTimeRecurring_endTime3" property="endTime3" z="VMa0lnqN+U9A0W2pF8uVu+r0O/o="/>
+            <table:column id="c_calendar_model_OpenTimeRecurring_heuriger" property="heuriger" z="tu50joI2W0XHR4e2J9W97fd1jxY="/>
         </table:table>
     </page:list>
 </div>

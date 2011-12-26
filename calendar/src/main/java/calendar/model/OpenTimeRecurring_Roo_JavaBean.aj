@@ -4,6 +4,7 @@
 package calendar.model;
 
 import calendar.model.DayOfWeek;
+import java.util.Date;
 
 privileged aspect OpenTimeRecurring_Roo_JavaBean {
     
@@ -13,6 +14,22 @@ privileged aspect OpenTimeRecurring_Roo_JavaBean {
     
     public void OpenTimeRecurring.setOpenDay(DayOfWeek openDay) {
         this.openDay = openDay;
+    }
+    
+    public Date OpenTimeRecurring.getStartDate() {
+        return this.startDate;
+    }
+    
+    public void OpenTimeRecurring.setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+    
+    public Date OpenTimeRecurring.getEndDate() {
+        return this.endDate;
+    }
+    
+    public void OpenTimeRecurring.setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
     
 }

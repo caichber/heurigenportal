@@ -11,5 +11,9 @@
             <menu:item id="i_opentime_new" messageCode="global_menu_new" url="/opentimes?form" z="OtJrCV0hsFFP2e7/qamB1iF5CgQ="/>
             <menu:item id="i_opentime_list" messageCode="global_menu_list" url="/opentimes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XfByC7HCH2kpYpzf8JCHBXTR0P4="/>
         </menu:category>
+        <menu:category id="c_heuriger" z="ef827irsKOFRF+F+vvdGaZmYuc4=">
+            <menu:item id="i_heuriger_new" messageCode="global_menu_new" url="/heurigers?form" z="Qo5/dYGHCl9IZ8dlpSkpwGUz+ME="/>
+            <menu:item id="i_heuriger_list" messageCode="global_menu_list" url="/heurigers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1rtoLpfImeeRcwIUdDMsl+PR+B4="/>
+        </menu:category>
     </menu:menu>
 </div>

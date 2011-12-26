@@ -10,6 +10,9 @@
         <field:input field="beginTime3" id="c_calendar_model_OpenTimeRecurring_beginTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="/TAOfMoZPPqBq2Ug2XTQ5X6ILoc="/>
         <field:input field="endTime3" id="c_calendar_model_OpenTimeRecurring_endTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="Henvj4Cbo6CIxUcyUHLrTygVhOQ="/>
         <field:select field="openDay" id="c_calendar_model_OpenTimeRecurring_openDay" items="${dayofweeks}" path="dayofweeks" required="true" z="UL61h7yy1YJjiPKbsBFcKeqHqvI="/>
+        <field:datetime dateTimePattern="${openTimeRecurring_startdate_date_format}" field="startDate" id="c_calendar_model_OpenTimeRecurring_startDate" z="7Z/wI+HbKBI+6nCXXwMmadXFHCc="/>
+        <field:datetime dateTimePattern="${openTimeRecurring_enddate_date_format}" field="endDate" id="c_calendar_model_OpenTimeRecurring_endDate" z="RNj2P9qv5UODmHoKWY7q8unOzTU="/>
+        <field:select field="heuriger" id="c_calendar_model_OpenTimeRecurring_heuriger" itemValue="id" items="${heurigers}" path="/heurigers" z="TYNwH9HqV2c/EX88w1LOSmX8mlg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_calendar_model_OpenTimeRecurring" render="${not empty dependencies}" z="NsTY0Mhjdwlvt/KjbuZOsIzZ/JI="/>
 </div>

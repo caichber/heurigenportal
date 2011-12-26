@@ -3,6 +3,7 @@
 
 package calendar.calendar.view;
 
+import calendar.model.Heuriger;
 import calendar.model.OpenTime;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -92,13 +93,18 @@ privileged aspect OpenTimeController_Roo_Controller {
         return "redirect:/opentimes";
     }
     
+    @ModelAttribute("heurigers")
+    public Collection<Heuriger> OpenTimeController.populateHeurigers() {
+        return Heuriger.findAllHeurigers();
+    }
+    
     @ModelAttribute("opentimes")
     public Collection<OpenTime> OpenTimeController.populateOpenTimes() {
         return OpenTime.findAllOpenTimes();
     }
     
     void OpenTimeController.addDateTimeFormatPatterns(Model uiModel) {
-        uiModel.addAttribute("openTime_openday_date_format", "'dd.MM.yyyy'");
+        uiModel.addAttribute("openTime_openday_date_format", "dd.MM.yyyy");
     }
     
     String OpenTimeController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

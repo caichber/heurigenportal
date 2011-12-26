@@ -16,7 +16,7 @@ public class DayOfWeekConverter implements Converter<DayOfWeek, String>{
 
 	@Override
 	public String convert(DayOfWeek source) {
-		return ctx.getMessage("label_calendar_model_dayofweeks_"+source.toString().toLowerCase(),null, LocaleContextHolder.getLocale());
+		return ctx.getMessage("enum_label_calendar_model_dayofweeks_"+source.toString().toLowerCase(),null, LocaleContextHolder.getLocale());
 	}
 
 }

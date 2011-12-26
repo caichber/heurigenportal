@@ -4,6 +4,7 @@
 package calendar.calendar.view;
 
 import calendar.model.DayOfWeek;
+import calendar.model.Heuriger;
 import calendar.model.OpenTimeRecurring;
 import java.io.UnsupportedEncodingException;
 import java.lang.Integer;
@@ -29,6 +30,7 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
     public String OpenTimeRecurringController.create(@Valid OpenTimeRecurring openTimeRecurring, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("openTimeRecurring", openTimeRecurring);
+            addDateTimeFormatPatterns(uiModel);
             return "opentimerecurrings/create";
         }
         uiModel.asMap().clear();
@@ -39,11 +41,13 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
     @RequestMapping(params = "form", method = RequestMethod.GET)
     public String OpenTimeRecurringController.createForm(Model uiModel) {
         uiModel.addAttribute("openTimeRecurring", new OpenTimeRecurring());
+        addDateTimeFormatPatterns(uiModel);
         return "opentimerecurrings/create";
     }
     
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public String OpenTimeRecurringController.show(@PathVariable("id") Long id, Model uiModel) {
+        addDateTimeFormatPatterns(uiModel);
         uiModel.addAttribute("opentimerecurring", OpenTimeRecurring.findOpenTimeRecurring(id));
         uiModel.addAttribute("itemId", id);
         return "opentimerecurrings/show";
@@ -59,6 +63,7 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
         } else {
             uiModel.addAttribute("opentimerecurrings", OpenTimeRecurring.findAllOpenTimeRecurrings());
         }
+        addDateTimeFormatPatterns(uiModel);
         return "opentimerecurrings/list";
     }
     
@@ -66,6 +71,7 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
     public String OpenTimeRecurringController.update(@Valid OpenTimeRecurring openTimeRecurring, BindingResult bindingResult, Model uiModel, HttpServletRequest httpServletRequest) {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("openTimeRecurring", openTimeRecurring);
+            addDateTimeFormatPatterns(uiModel);
             return "opentimerecurrings/update";
         }
         uiModel.asMap().clear();
@@ -76,6 +82,7 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
     @RequestMapping(value = "/{id}", params = "form", method = RequestMethod.GET)
     public String OpenTimeRecurringController.updateForm(@PathVariable("id") Long id, Model uiModel) {
         uiModel.addAttribute("openTimeRecurring", OpenTimeRecurring.findOpenTimeRecurring(id));
+        addDateTimeFormatPatterns(uiModel);
         return "opentimerecurrings/update";
     }
     
@@ -93,9 +100,19 @@ privileged aspect OpenTimeRecurringController_Roo_Controller {
         return Arrays.asList(DayOfWeek.class.getEnumConstants());
     }
     
+    @ModelAttribute("heurigers")
+    public Collection<Heuriger> OpenTimeRecurringController.populateHeurigers() {
+        return Heuriger.findAllHeurigers();
+    }
+    
     @ModelAttribute("opentimerecurrings")
     public Collection<OpenTimeRecurring> OpenTimeRecurringController.populateOpenTimeRecurrings() {
         return OpenTimeRecurring.findAllOpenTimeRecurrings();
+    }
+    
+    void OpenTimeRecurringController.addDateTimeFormatPatterns(Model uiModel) {
+        uiModel.addAttribute("openTimeRecurring_startdate_date_format", "dd.MM.yyyy");
+        uiModel.addAttribute("openTimeRecurring_enddate_date_format", "dd.MM.yyyy");
     }
     
     String OpenTimeRecurringController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

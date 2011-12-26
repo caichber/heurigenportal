@@ -1,5 +1,6 @@
 package calendar.model;
 
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.Pattern;
 
 import org.springframework.roo.addon.entity.RooEntity;
@@ -10,7 +11,11 @@ import org.springframework.roo.addon.tostring.RooToString;
 @RooToString
 @RooEntity(mappedSuperclass = true)
 public abstract class AOpenTime {
-    @Pattern(regexp = "^([0-1][0-9]|[2][0-3]):([0-5][0-9])$")
+	
+	@ManyToOne
+	private Heuriger heuriger;
+	
+	@Pattern(regexp = "^([0-1][0-9]|[2][0-3]):([0-5][0-9])$")
     private String beginTime1;
 
     @Pattern(regexp = "^([0-1][0-9]|[2][0-3]):([0-5][0-9])$")

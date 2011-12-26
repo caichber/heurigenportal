@@ -27,6 +27,6 @@ public class ApplicationConversionServiceFactoryBean
 	@Override
 	protected void installFormatters(FormatterRegistry registry) {
 		super.installFormatters(registry);
-		registry.addConverter(new DayOfWeekConverter(applicationContext));
+		//registry.addConverter(new DayOfWeekConverter(applicationContext));
 	}
 }

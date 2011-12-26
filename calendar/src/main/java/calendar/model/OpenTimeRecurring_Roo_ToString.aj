@@ -12,11 +12,14 @@ privileged aspect OpenTimeRecurring_Roo_ToString {
         sb.append("BeginTime1: ").append(getBeginTime1()).append(", ");
         sb.append("BeginTime2: ").append(getBeginTime2()).append(", ");
         sb.append("BeginTime3: ").append(getBeginTime3()).append(", ");
+        sb.append("EndDate: ").append(getEndDate()).append(", ");
         sb.append("EndTime1: ").append(getEndTime1()).append(", ");
         sb.append("EndTime2: ").append(getEndTime2()).append(", ");
         sb.append("EndTime3: ").append(getEndTime3()).append(", ");
+        sb.append("Heuriger: ").append(getHeuriger()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("OpenDay: ").append(getOpenDay()).append(", ");
+        sb.append("StartDate: ").append(getStartDate()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

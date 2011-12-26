@@ -62,3 +62,13 @@ quit
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 19:55:04
 web mvc setup
 web mvc all --package ~.calendar.view
+entity --class calendar.model.Heuriger
+field set --fieldName openTimes --type calendar.model.OpenTime --cardinality ONE_TO_MANY
+web mvc all --package ~.calendar.view
+field set --fieldName toppings --type ~.model.OpenTime --class calendar.model.OpenTime
+focus --class calendar.model.Heuriger
+field set --fieldName toppings --type ~.model.OpenTime --class calendar.model.OpenTime
+focus --class calendar.model.Heuriger
+field set --fieldName openTimes --type ~.model.OpenTime
+focus --class calendar.model.Heuriger
+field set --fieldName openTimes --type ~.model.OpenTime

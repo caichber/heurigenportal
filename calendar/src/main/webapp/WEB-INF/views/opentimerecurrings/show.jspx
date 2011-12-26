@@ -10,5 +10,8 @@
         <field:display field="beginTime3" id="s_calendar_model_OpenTimeRecurring_beginTime3" object="${opentimerecurring}" z="tAYgKXZmxT5fkCRXnIKzz02Xryw="/>
         <field:display field="endTime3" id="s_calendar_model_OpenTimeRecurring_endTime3" object="${opentimerecurring}" z="WLXTGt0HpD7FTEgdSeXsWlkG2Eo="/>
         <field:display field="openDay" id="s_calendar_model_OpenTimeRecurring_openDay" object="${opentimerecurring}" z="KwQsqAf0b5nkc3LAr+vjQMc7ozA="/>
+        <field:display date="true" dateTimePattern="${openTimeRecurring_startdate_date_format}" field="startDate" id="s_calendar_model_OpenTimeRecurring_startDate" object="${opentimerecurring}" z="igKLP64ZG4rVZbRG2kyAtrc8Joc="/>
+        <field:display date="true" dateTimePattern="${openTimeRecurring_enddate_date_format}" field="endDate" id="s_calendar_model_OpenTimeRecurring_endDate" object="${opentimerecurring}" z="5Aw5v4b+nKBtg2DgVqn0tjm9sA4="/>
+        <field:display field="heuriger" id="s_calendar_model_OpenTimeRecurring_heuriger" object="${opentimerecurring}" z="WxTKh9h55Up1yBF5BgGvxTUEqUk="/>
     </page:show>
 </div>

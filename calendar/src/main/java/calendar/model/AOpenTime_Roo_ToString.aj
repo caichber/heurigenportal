@@ -15,6 +15,7 @@ privileged aspect AOpenTime_Roo_ToString {
         sb.append("EndTime1: ").append(getEndTime1()).append(", ");
         sb.append("EndTime2: ").append(getEndTime2()).append(", ");
         sb.append("EndTime3: ").append(getEndTime3()).append(", ");
+        sb.append("Heuriger: ").append(getHeuriger()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

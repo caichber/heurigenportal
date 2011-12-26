@@ -3,6 +3,7 @@
 
 package calendar.calendar.view;
 
+import calendar.model.Heuriger;
 import calendar.model.OpenTime;
 import calendar.model.OpenTimeRecurring;
 import java.lang.String;
@@ -12,6 +13,7 @@ import org.springframework.format.FormatterRegistry;
 privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService {
     
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
+        registry.addConverter(new HeurigerConverter());
         registry.addConverter(new OpenTimeConverter());
         registry.addConverter(new OpenTimeRecurringConverter());
     }
@@ -19,6 +21,13 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {
         super.afterPropertiesSet();
         installLabelConverters(getObject());
+    }
+    
+    static class calendar.calendar.view.ApplicationConversionServiceFactoryBean.HeurigerConverter implements Converter<Heuriger, String> {
+        public String convert(Heuriger heuriger) {
+            return new StringBuilder().append(heuriger.getName()).toString();
+        }
+        
     }
     
     static class calendar.calendar.view.ApplicationConversionServiceFactoryBean.OpenTimeConverter implements Converter<OpenTime, String> {

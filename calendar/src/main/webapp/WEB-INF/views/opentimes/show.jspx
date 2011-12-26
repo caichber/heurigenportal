@@ -10,5 +10,6 @@
         <field:display field="beginTime3" id="s_calendar_model_OpenTime_beginTime3" object="${opentime}" z="WQ67B5q+qL2p65uSeMyeeijmKcc="/>
         <field:display field="endTime3" id="s_calendar_model_OpenTime_endTime3" object="${opentime}" z="5iEZdBB6X1R1cx1ih/cFYnNDdzg="/>
         <field:display date="true" dateTimePattern="${openTime_openday_date_format}" field="openDay" id="s_calendar_model_OpenTime_openDay" object="${opentime}" z="YWbeP0RRYgieENfxBcMwxM0eqMA="/>
+        <field:display field="heuriger" id="s_calendar_model_OpenTime_heuriger" object="${opentime}" z="HMaKUVA3N9vAwd0ene7LwlayN24="/>
     </page:show>
 </div>

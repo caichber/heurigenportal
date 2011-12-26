@@ -10,6 +10,7 @@
         <field:input field="beginTime3" id="c_calendar_model_OpenTime_beginTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="YsAH8cIPvqzeO04hikVTVQoJqYo="/>
         <field:input field="endTime3" id="c_calendar_model_OpenTime_endTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="4zo5ruBQZRp7/NrclFLsqudwfsg="/>
         <field:datetime dateTimePattern="${openTime_openday_date_format}" field="openDay" id="c_calendar_model_OpenTime_openDay" required="true" z="SEfRRz/lAIRgMIHNlFyQKSaB5CU="/>
+        <field:select field="heuriger" id="c_calendar_model_OpenTime_heuriger" itemValue="id" items="${heurigers}" path="/heurigers" z="RxOmRSsmTQQVMeLLETq2MY7p3T4="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_calendar_model_OpenTime" render="${not empty dependencies}" z="OHw+F+yvIwC7CIl28aB6Vc9Dg+U="/>
 </div>

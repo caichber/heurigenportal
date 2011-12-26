@@ -3,9 +3,18 @@
 
 package calendar.model;
 
+import calendar.model.Heuriger;
 import java.lang.String;
 
 privileged aspect AOpenTime_Roo_JavaBean {
+    
+    public Heuriger AOpenTime.getHeuriger() {
+        return this.heuriger;
+    }
+    
+    public void AOpenTime.setHeuriger(Heuriger heuriger) {
+        this.heuriger = heuriger;
+    }
     
     public String AOpenTime.getBeginTime1() {
         return this.beginTime1;
