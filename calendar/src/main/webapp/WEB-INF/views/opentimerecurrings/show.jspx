@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_calendar_model_OpenTimeRecurring" object="${opentimerecurring}" path="/opentimerecurrings" z="P8UaZy41jhBjOSELyFL88T2PSXE=">
+        <field:display field="beginTime1" id="s_calendar_model_OpenTimeRecurring_beginTime1" object="${opentimerecurring}" z="wc8Cq7cvNytFGC88MTarsFvUIqA="/>
+        <field:display field="endTime1" id="s_calendar_model_OpenTimeRecurring_endTime1" object="${opentimerecurring}" z="BCvIn9FWxwbVU07oDHOwUi2pqZk="/>
+        <field:display field="beginTime2" id="s_calendar_model_OpenTimeRecurring_beginTime2" object="${opentimerecurring}" z="nYIKYjIB1el54+Pf23tSXWqYyGo="/>
+        <field:display field="endTime2" id="s_calendar_model_OpenTimeRecurring_endTime2" object="${opentimerecurring}" z="JVV1dSzTHM2z3ep42F63xV5BTE8="/>
+        <field:display field="beginTime3" id="s_calendar_model_OpenTimeRecurring_beginTime3" object="${opentimerecurring}" z="tAYgKXZmxT5fkCRXnIKzz02Xryw="/>
+        <field:display field="endTime3" id="s_calendar_model_OpenTimeRecurring_endTime3" object="${opentimerecurring}" z="WLXTGt0HpD7FTEgdSeXsWlkG2Eo="/>
+        <field:display field="openDay" id="s_calendar_model_OpenTimeRecurring_openDay" object="${opentimerecurring}" z="KwQsqAf0b5nkc3LAr+vjQMc7ozA="/>
+    </page:show>
+</div>

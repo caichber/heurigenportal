@@ -60,3 +60,5 @@ field enum weekDay --type ~.model.WeekDays --enumType STRING
 quit
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 19:54:55
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 19:55:04
+web mvc setup
+web mvc all --package ~.calendar.view

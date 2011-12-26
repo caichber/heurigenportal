@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_calendar_model_OpenTime" items="${opentimes}" z="j9N2GKvZcV5z0gLGJY5dG2OORus=">
+        <table:table data="${opentimes}" id="l_calendar_model_OpenTime" path="/opentimes" z="RFwQIMjtFifkEDgih1h4JaODpgY=">
+            <table:column id="c_calendar_model_OpenTime_beginTime1" property="beginTime1" z="EhIvMfl7TbpqGIp9asAikphPRr4="/>
+            <table:column id="c_calendar_model_OpenTime_endTime1" property="endTime1" z="Vubc7RQ1Rt64ZzLYb/CmReZHVhI="/>
+            <table:column id="c_calendar_model_OpenTime_beginTime2" property="beginTime2" z="ShxIurgwakL1CwmeFWik6+7MeTI="/>
+            <table:column id="c_calendar_model_OpenTime_endTime2" property="endTime2" z="tevrXKtWlzvD56T1zyyry5Leedk="/>
+            <table:column id="c_calendar_model_OpenTime_beginTime3" property="beginTime3" z="PXz7Znmhi0CfKVvAZNewS9FJM+8="/>
+            <table:column id="c_calendar_model_OpenTime_endTime3" property="endTime3" z="aJhUE+GK5zyNhyW+zR8Ba3xH1fs="/>
+        </table:table>
+    </page:list>
+</div>

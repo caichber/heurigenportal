@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="opentimes/list">
+        <put-attribute name="body" value="/WEB-INF/views/opentimes/list.jspx"/>
+    </definition>
+<definition extends="default" name="opentimes/show">
+        <put-attribute name="body" value="/WEB-INF/views/opentimes/show.jspx"/>
+    </definition>
+<definition extends="default" name="opentimes/create">
+        <put-attribute name="body" value="/WEB-INF/views/opentimes/create.jspx"/>
+    </definition>
+<definition extends="default" name="opentimes/update">
+        <put-attribute name="body" value="/WEB-INF/views/opentimes/update.jspx"/>
+    </definition>
+</tiles-definitions>

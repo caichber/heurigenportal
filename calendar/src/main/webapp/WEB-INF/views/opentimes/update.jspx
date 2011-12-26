@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_calendar_model_OpenTime" modelAttribute="openTime" path="/opentimes" versionField="Version" z="USKs6RcBwEVJ6vGGj5k8hYAI+9k=">
+        <field:input field="beginTime1" id="c_calendar_model_OpenTime_beginTime1" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="6VjSwhDEGQYY0236t61vwL2oFnk="/>
+        <field:input field="endTime1" id="c_calendar_model_OpenTime_endTime1" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="aOuzcPf9wLiha6l3umr8IDf0vFQ="/>
+        <field:input field="beginTime2" id="c_calendar_model_OpenTime_beginTime2" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="mRFsNYrGiTXGvAyaoM0soWcpOwo="/>
+        <field:input field="endTime2" id="c_calendar_model_OpenTime_endTime2" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="RyL74rWfu9XDem+xfuK/RHAvHEw="/>
+        <field:input field="beginTime3" id="c_calendar_model_OpenTime_beginTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="YsAH8cIPvqzeO04hikVTVQoJqYo="/>
+        <field:input field="endTime3" id="c_calendar_model_OpenTime_endTime3" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="4zo5ruBQZRp7/NrclFLsqudwfsg="/>
+        <field:datetime dateTimePattern="${openTime_openday_date_format}" field="openDay" id="c_calendar_model_OpenTime_openDay" required="true" z="SEfRRz/lAIRgMIHNlFyQKSaB5CU="/>
+    </form:update>
+</div>

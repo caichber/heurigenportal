@@ -1,4 +1,4 @@
-package calendar.web;
+package calendar.calendar.view;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

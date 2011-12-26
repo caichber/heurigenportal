@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_opentimerecurring" z="TOwpr32Lcr5DorLt8ncAGg8yC4M=">
+            <menu:item id="i_opentimerecurring_new" messageCode="global_menu_new" url="/opentimerecurrings?form" z="WZGnGc4Fc5g8k4SZSPwhpcnJ9xQ="/>
+            <menu:item id="i_opentimerecurring_list" messageCode="global_menu_list" url="/opentimerecurrings?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jinBWdZaI34IS48Tzgvr8QvNcpM="/>
+        </menu:category>
+        <menu:category id="c_opentime" z="7R6IiDpoU8/jKYrPNIZ4u+UKm/s=">
+            <menu:item id="i_opentime_new" messageCode="global_menu_new" url="/opentimes?form" z="OtJrCV0hsFFP2e7/qamB1iF5CgQ="/>
+            <menu:item id="i_opentime_list" messageCode="global_menu_list" url="/opentimes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XfByC7HCH2kpYpzf8JCHBXTR0P4="/>
+        </menu:category>
+    </menu:menu>
+</div>
