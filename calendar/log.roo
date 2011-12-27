@@ -72,3 +72,18 @@ focus --class calendar.model.Heuriger
 field set --fieldName openTimes --type ~.model.OpenTime
 focus --class calendar.model.Heuriger
 field set --fieldName openTimes --type ~.model.OpenTime
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 22:05:08
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 00:58:18
+security setup
+// [failed] entity --class calendar.model.User
+entity --class calendar.model.Users
+field string --fieldName userName
+// [failed] field string password
+focus --class calendar.model.SystemUser
+field boolean --fieldName accountNonExpired
+field boolean --fieldName accountNonLocked
+field boolean --fieldName credentialsNonExpired
+field boolean --fieldName enabled
+entity --class calendar.model.SystemAuthority
+field string --fieldName authority
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 02:55:06

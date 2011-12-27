@@ -73,4 +73,5 @@
     </bean>
     
     <bean id="dataInitBean" class="calendar.datainit.DataInitializationBean" />
+    <bean id="userService" class="calendar.security.UserService"/>
 </beans>
