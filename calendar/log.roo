@@ -87,3 +87,5 @@ field boolean --fieldName enabled
 entity --class calendar.model.SystemAuthority
 field string --fieldName authority
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 02:55:06
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-27 03:13:00
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 22:16:36

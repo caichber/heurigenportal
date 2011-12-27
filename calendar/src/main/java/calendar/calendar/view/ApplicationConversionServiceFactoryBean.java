@@ -7,8 +7,6 @@ import org.springframework.format.FormatterRegistry;
 import org.springframework.format.support.FormattingConversionServiceFactoryBean;
 import org.springframework.roo.addon.web.mvc.controller.RooConversionService;
 
-import calendar.converter.DayOfWeekConverter;
-
 /**
  * A central place to register application converters and formatters. 
  */
@@ -16,6 +14,7 @@ import calendar.converter.DayOfWeekConverter;
 public class ApplicationConversionServiceFactoryBean 
 	extends FormattingConversionServiceFactoryBean implements ApplicationContextAware{
 
+	@SuppressWarnings("unused")
 	private ApplicationContext applicationContext;
 	
 	@Override
