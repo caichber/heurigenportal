@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="systemauthoritys/list">
+        <put-attribute name="body" value="/WEB-INF/views/systemauthoritys/list.jspx"/>
+    </definition>
+<definition extends="default" name="systemauthoritys/show">
+        <put-attribute name="body" value="/WEB-INF/views/systemauthoritys/show.jspx"/>
+    </definition>
+<definition extends="default" name="systemauthoritys/create">
+        <put-attribute name="body" value="/WEB-INF/views/systemauthoritys/create.jspx"/>
+    </definition>
+<definition extends="default" name="systemauthoritys/update">
+        <put-attribute name="body" value="/WEB-INF/views/systemauthoritys/update.jspx"/>
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_calendar_model_SystemAuthority" items="${systemauthoritys}" z="RcOvJkks+DJOd+XK1bghMsId4PY=">
+        <table:table data="${systemauthoritys}" id="l_calendar_model_SystemAuthority" path="/systemauthoritys" z="4LfFQm8FQmn0OXsNpUFVWvYUFJg=">
+            <table:column id="c_calendar_model_SystemAuthority_authority" property="authority" z="BPH5E26peJdxY02HtHGxK++LjNM="/>
+        </table:table>
+    </page:list>
+</div>

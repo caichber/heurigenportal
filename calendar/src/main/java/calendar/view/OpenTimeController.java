@@ -1,12 +1,12 @@
-package calendar.calendar.view;
+package calendar.view;
 
-import calendar.model.Heuriger;
+import calendar.model.OpenTime;
 import org.springframework.roo.addon.web.mvc.controller.RooWebScaffold;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RooWebScaffold(path = "heurigers", formBackingObject = Heuriger.class)
-@RequestMapping("/heurigers")
+@RooWebScaffold(path = "opentimes", formBackingObject = OpenTime.class)
+@RequestMapping("/opentimes")
 @Controller
-public class HeurigerController {
+public class OpenTimeController {
 }

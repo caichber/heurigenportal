@@ -1,4 +1,4 @@
-package calendar.calendar.view;
+package calendar.view;
 
 import calendar.model.OpenTimeRecurring;
 import org.springframework.roo.addon.web.mvc.controller.RooWebScaffold;

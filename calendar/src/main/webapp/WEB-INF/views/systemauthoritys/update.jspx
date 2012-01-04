@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_calendar_model_SystemAuthority" modelAttribute="systemAuthority" path="/systemauthoritys" versionField="Version" z="PpWRYY/yH2LYl5OCkhZIkfxsUyc=">
+        <field:input field="authority" id="c_calendar_model_SystemAuthority_authority" z="DUOnsewtgXgCALCBM/pv83K+JzY="/>
+    </form:update>
+</div>

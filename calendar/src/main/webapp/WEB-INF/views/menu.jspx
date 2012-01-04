@@ -15,5 +15,13 @@
             <menu:item id="i_heuriger_new" messageCode="global_menu_new" url="/heurigers?form" z="Qo5/dYGHCl9IZ8dlpSkpwGUz+ME="/>
             <menu:item id="i_heuriger_list" messageCode="global_menu_list" url="/heurigers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="1rtoLpfImeeRcwIUdDMsl+PR+B4="/>
         </menu:category>
+        <menu:category id="c_systemuser" z="VUyOQ1qm2564dCbm9lJylDiISxw=">
+            <menu:item id="i_systemuser_new" messageCode="global_menu_new" url="/systemusers?form" z="goei29ZpWJ1W7luGL4W4aXNyZBQ="/>
+            <menu:item id="i_systemuser_list" messageCode="global_menu_list" url="/systemusers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Ic4rUisCvrgrcwFXWNiimXXNy8g="/>
+        </menu:category>
+        <menu:category id="c_systemauthority" z="VpRzR7X0J/8v/uEc3DwWX3bUOr0=">
+            <menu:item id="i_systemauthority_new" messageCode="global_menu_new" url="/systemauthoritys?form" z="W6KCHnwUPnWO/iXdLaJKIK3MriM="/>
+            <menu:item id="i_systemauthority_list" messageCode="global_menu_list" url="/systemauthoritys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ixMUHGoo0oW8XP3mIq1VZ89b+M0="/>
+        </menu:category>
     </menu:menu>
 </div>

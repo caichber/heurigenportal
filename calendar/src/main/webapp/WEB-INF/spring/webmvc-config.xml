@@ -71,5 +71,5 @@
       </list>
     </property>
   </bean>
-<bean class="calendar.calendar.view.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
+<bean class="calendar.view.ApplicationConversionServiceFactoryBean" id="applicationConversionService"/>
 </beans>
