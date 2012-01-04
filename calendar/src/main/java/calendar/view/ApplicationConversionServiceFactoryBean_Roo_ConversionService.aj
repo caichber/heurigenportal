@@ -57,7 +57,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class calendar.view.ApplicationConversionServiceFactoryBean.SystemUserConverter implements Converter<SystemUser, String> {
         public String convert(SystemUser systemUser) {
-            return new StringBuilder().append(systemUser.getPassword()).toString();
+            return new StringBuilder().append(systemUser.getPassword()).append(" ").append(systemUser.getUsername()).toString();
         }
         
     }

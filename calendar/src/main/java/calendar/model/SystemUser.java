@@ -18,18 +18,20 @@ import org.springframework.security.core.userdetails.UserDetails;
 @RooEntity
 public class SystemUser implements UserDetails {
 
-    @Id
-    private String username;
+	@Id
+    private String userId;
+	
+	private String username;
 
     private String password;
 
-    private Boolean accountNonExpired;
+    private Boolean accountNonExpired = false;
 
-    private Boolean accountNonLocked;
+    private Boolean accountNonLocked = false;
 
-    private Boolean credentialsNonExpired;
+    private Boolean credentialsNonExpired = false;
 
-    private Boolean enabled;
+    private Boolean enabled = false;
     
     @OneToMany(cascade={CascadeType.REFRESH}, targetEntity=SystemAuthority.class, fetch= FetchType.EAGER)
     @JoinColumn(name="USER")
@@ -72,6 +74,7 @@ public class SystemUser implements UserDetails {
 
 	public void setUsername(String username) {
 		this.username = username;
+		this.userId = username;
 	}
 
 	public void setPassword(String password) {

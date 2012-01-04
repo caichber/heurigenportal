@@ -3,6 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_calendar_model_OpenTimeRecurring" modelAttribute="openTimeRecurring" path="/opentimerecurrings" render="${empty dependencies}" z="7pTALkqBa7E3zDsthwL/9WGf3O0=">
+        <field:select field="heuriger" id="c_calendar_model_OpenTimeRecurring_heuriger" itemValue="id" items="${heurigers}" path="/heurigers" z="TYNwH9HqV2c/EX88w1LOSmX8mlg="/>
         <field:input field="beginTime1" id="c_calendar_model_OpenTimeRecurring_beginTime1" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="Mx+LAIK+/amNg2hDcVVdv0BSCgg="/>
         <field:input field="endTime1" id="c_calendar_model_OpenTimeRecurring_endTime1" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="nSVZ5PnWecCIAG9vHuWy8dcT1SQ="/>
         <field:input field="beginTime2" id="c_calendar_model_OpenTimeRecurring_beginTime2" validationRegex="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" z="ApKGhySbUuCUox1i7pjaWbXHoaQ="/>
@@ -12,7 +13,6 @@
         <field:select field="openDay" id="c_calendar_model_OpenTimeRecurring_openDay" items="${dayofweeks}" path="dayofweeks" required="true" z="UL61h7yy1YJjiPKbsBFcKeqHqvI="/>
         <field:datetime dateTimePattern="${openTimeRecurring_startdate_date_format}" field="startDate" id="c_calendar_model_OpenTimeRecurring_startDate" z="7Z/wI+HbKBI+6nCXXwMmadXFHCc="/>
         <field:datetime dateTimePattern="${openTimeRecurring_enddate_date_format}" field="endDate" id="c_calendar_model_OpenTimeRecurring_endDate" z="RNj2P9qv5UODmHoKWY7q8unOzTU="/>
-        <field:select field="heuriger" id="c_calendar_model_OpenTimeRecurring_heuriger" itemValue="id" items="${heurigers}" path="/heurigers" z="TYNwH9HqV2c/EX88w1LOSmX8mlg="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_calendar_model_OpenTimeRecurring" render="${not empty dependencies}" z="NsTY0Mhjdwlvt/KjbuZOsIzZ/JI="/>
 </div>

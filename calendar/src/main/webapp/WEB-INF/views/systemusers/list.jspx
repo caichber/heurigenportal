@@ -3,13 +3,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_calendar_model_SystemUser" items="${systemusers}" z="erIuOLnqz1KyLePBDOdb5/AviqQ=">
-        <table:table data="${systemusers}" id="l_calendar_model_SystemUser" path="/systemusers" typeIdFieldName="username" z="E6uE3aou9vcxZlICwcJt35Rh3I4=">
+        <table:table data="${systemusers}" id="l_calendar_model_SystemUser" path="/systemusers" typeIdFieldName="userId" z="ByaecmdCS58SfY8PpORNRUJ20cU=">
             <table:column id="c_calendar_model_SystemUser_authorities" property="authorities" z="N/Om3vZTlDClGK5FRZh+1k84sCM="/>
             <table:column id="c_calendar_model_SystemUser_password" property="password" z="dlEtP1v2xCdvjbziA57YV8AX3vI="/>
+            <table:column id="c_calendar_model_SystemUser_username" property="username" z="mhIyROGUKxz4MK3Zyjxm0aFWks8="/>
             <table:column id="c_calendar_model_SystemUser_accountNonExpired" property="accountNonExpired" z="qlVRs9UEeZ6YpadN8SvOkW3Q7zc="/>
             <table:column id="c_calendar_model_SystemUser_accountNonLocked" property="accountNonLocked" z="vnygbPWqEfMhpZPK+8loQvtglCk="/>
             <table:column id="c_calendar_model_SystemUser_credentialsNonExpired" property="credentialsNonExpired" z="HBU93apO3r+8OJbpH7yKBUkMSx8="/>
-            <table:column id="c_calendar_model_SystemUser_enabled" property="enabled" z="jkTYuyVBX7kf2Pa921iUmuRxVs4="/>
         </table:table>
     </page:list>
 </div>

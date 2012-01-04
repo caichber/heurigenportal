@@ -25,6 +25,14 @@ privileged aspect SystemUser_Roo_Entity {
     @Column(name = "version")
     private Integer SystemUser.version;
     
+    public String SystemUser.getUserId() {
+        return this.userId;
+    }
+    
+    public void SystemUser.setUserId(String id) {
+        this.userId = id;
+    }
+    
     public Integer SystemUser.getVersion() {
         return this.version;
     }
@@ -45,7 +53,7 @@ privileged aspect SystemUser_Roo_Entity {
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            SystemUser attached = SystemUser.findSystemUser(this.username);
+            SystemUser attached = SystemUser.findSystemUser(this.userId);
             this.entityManager.remove(attached);
         }
     }
@@ -84,9 +92,9 @@ privileged aspect SystemUser_Roo_Entity {
         return entityManager().createQuery("SELECT o FROM SystemUser o", SystemUser.class).getResultList();
     }
     
-    public static SystemUser SystemUser.findSystemUser(String username) {
-        if (username == null || username.length() == 0) return null;
-        return entityManager().find(SystemUser.class, username);
+    public static SystemUser SystemUser.findSystemUser(String userId) {
+        if (userId == null || userId.length() == 0) return null;
+        return entityManager().find(SystemUser.class, userId);
     }
     
     public static List<SystemUser> SystemUser.findSystemUserEntries(int firstResult, int maxResults) {

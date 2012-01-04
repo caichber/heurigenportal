@@ -30,7 +30,7 @@ privileged aspect SystemUserController_Roo_Controller {
         }
         uiModel.asMap().clear();
         systemUser.persist();
-        return "redirect:/systemusers/" + encodeUrlPathSegment(systemUser.getUsername().toString(), httpServletRequest);
+        return "redirect:/systemusers/" + encodeUrlPathSegment(systemUser.getUserId().toString(), httpServletRequest);
     }
     
     @RequestMapping(params = "form", method = RequestMethod.GET)
@@ -39,10 +39,10 @@ privileged aspect SystemUserController_Roo_Controller {
         return "systemusers/create";
     }
     
-    @RequestMapping(value = "/{username}", method = RequestMethod.GET)
-    public String SystemUserController.show(@PathVariable("username") String username, Model uiModel) {
-        uiModel.addAttribute("systemuser", SystemUser.findSystemUser(username));
-        uiModel.addAttribute("itemId", username);
+    @RequestMapping(value = "/{userId}", method = RequestMethod.GET)
+    public String SystemUserController.show(@PathVariable("userId") String userId, Model uiModel) {
+        uiModel.addAttribute("systemuser", SystemUser.findSystemUser(userId));
+        uiModel.addAttribute("itemId", userId);
         return "systemusers/show";
     }
     
@@ -67,18 +67,18 @@ privileged aspect SystemUserController_Roo_Controller {
         }
         uiModel.asMap().clear();
         systemUser.merge();
-        return "redirect:/systemusers/" + encodeUrlPathSegment(systemUser.getUsername().toString(), httpServletRequest);
+        return "redirect:/systemusers/" + encodeUrlPathSegment(systemUser.getUserId().toString(), httpServletRequest);
     }
     
-    @RequestMapping(value = "/{username}", params = "form", method = RequestMethod.GET)
-    public String SystemUserController.updateForm(@PathVariable("username") String username, Model uiModel) {
-        uiModel.addAttribute("systemUser", SystemUser.findSystemUser(username));
+    @RequestMapping(value = "/{userId}", params = "form", method = RequestMethod.GET)
+    public String SystemUserController.updateForm(@PathVariable("userId") String userId, Model uiModel) {
+        uiModel.addAttribute("systemUser", SystemUser.findSystemUser(userId));
         return "systemusers/update";
     }
     
-    @RequestMapping(value = "/{username}", method = RequestMethod.DELETE)
-    public String SystemUserController.delete(@PathVariable("username") String username, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
-        SystemUser.findSystemUser(username).remove();
+    @RequestMapping(value = "/{userId}", method = RequestMethod.DELETE)
+    public String SystemUserController.delete(@PathVariable("userId") String userId, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
+        SystemUser.findSystemUser(userId).remove();
         uiModel.asMap().clear();
         uiModel.addAttribute("page", (page == null) ? "1" : page.toString());
         uiModel.addAttribute("size", (size == null) ? "10" : size.toString());

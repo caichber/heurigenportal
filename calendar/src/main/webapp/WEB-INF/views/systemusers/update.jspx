@@ -2,8 +2,9 @@
 <div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <form:update id="fu_calendar_model_SystemUser" idField="username" modelAttribute="systemUser" path="/systemusers" versionField="Version" z="3TzI5wQZ2XM3MT7B/f59jCOPhAM=">
+    <form:update id="fu_calendar_model_SystemUser" idField="userId" modelAttribute="systemUser" path="/systemusers" versionField="Version" z="QPZ4cdpULMEIGAbaNn7fMRJKfuQ=">
         <field:input field="password" id="c_calendar_model_SystemUser_password" z="UYQCKYEC/Z1BGdpsh7LhcJW75Qk="/>
+        <field:input field="username" id="c_calendar_model_SystemUser_username" z="XV1w16OE80fnEUl3qJ26/2mI0ts="/>
         <field:checkbox field="accountNonExpired" id="c_calendar_model_SystemUser_accountNonExpired" z="E4uIA5/JFDo2Z9OxGuG7EAm1mKs="/>
         <field:checkbox field="accountNonLocked" id="c_calendar_model_SystemUser_accountNonLocked" z="3n2GhW/Afa8gyw+X01Wa4Y4AbIo="/>
         <field:checkbox field="credentialsNonExpired" id="c_calendar_model_SystemUser_credentialsNonExpired" z="04cuUEMzOsk5WXFGQkMWAaG/2h4="/>

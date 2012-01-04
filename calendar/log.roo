@@ -1,93 +1,11 @@
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:08:45
-project --topLevelPackage calendar --projectName calendar --java 6
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 20:08:46
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:08:52
-hint
-persistence setup --database HYPERSONIC_IN_MEMORY --provider HIBERNATE
-hint
-entity --class ~.model.DayOfWeek
-entity --class ~.model.TimeFrame
-entity --class ~.model.OpenDay
-entity --class ~.model.OpeningTimeWeek
-hint
-hint topics
-hint controllers
-web mvc setup
-web mvc all --package ~.web
-web mvc all --package ~.web
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 20:45:48
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-19 20:47:14
-focus --class calendar.model.OpeningTime
-// [failed] field date --fieldName begin --type java.util.Date
-field enum --type calendar.model.DayOfWeek dayow
-field date --fieldName timeBegin --type java.util.Date
-help field data
-hint
-hint fields
-hint fields date
-hint fields
-// [failed] field date --type java.util.Date --fieldName begin
-field date --type java.util.Date --fieldName timeBegin --dateTimeFormatPattern hh:mm
-field date --type java.util.Date --fieldName timeBegin --dateTimeFormatPattern hh:mm --timeFormat SHORT 
-// [failed] field date --type java.util.Date --fieldName timeBegin --timeFormat SHORT 
-field date --type java.util.Date --fieldName timeBegin2 --timeFormat SHORT 
-field date --type java.util.Date --fieldName timeBegin3 --persistenceType JPA_TIME 
-field date --type java.util.Calendar --fieldName date1 --dateFormat NONE --timeFormat SHORT 
-field date --type java.util.Date --fieldName test --persistenceType JPA_TIMESTAMP 
-field string --fieldName tsasd --regexp ^([0-1][0-9]|[2][0-3]):([0-5][0-9])$
-field set --fieldName test --type calendar.model.OpeningTime --cardinality ONE_TO_MANY
-focus --class calendar.model.OpeningTimeWeek
-field set --fieldName toppings --type ~.model.OpeningTime
-field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek
-focus --class calendar.model.OpeningTime 
-field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek
-// [failed] field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek --enumType STRING 
-field enum --fieldName dayOfWeek --type calendar.model.DayOfWeek --enumType STRING 
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-19 22:55:34
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 19:44:22
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 20:22:29
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-21 20:30:47
-enum type --class ~model.WeekDays
-enum constant --name Monday
-enum constant --name Tuesday
-focus  --class calendar.model.OpeningTime
-// [failed] field enum day --type ~.model.WeekDays --enumType STRING
-field enum weekDay --type ~.model.WeekDays --enumType STRING
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-21 23:22:28
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 19:49:29
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 19:51:15
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 19:51:47
-quit
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 19:54:55
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-26 19:55:04
-web mvc setup
-web mvc all --package ~.calendar.view
-entity --class calendar.model.Heuriger
-field set --fieldName openTimes --type calendar.model.OpenTime --cardinality ONE_TO_MANY
-web mvc all --package ~.calendar.view
-field set --fieldName toppings --type ~.model.OpenTime --class calendar.model.OpenTime
-focus --class calendar.model.Heuriger
-field set --fieldName toppings --type ~.model.OpenTime --class calendar.model.OpenTime
-focus --class calendar.model.Heuriger
-field set --fieldName openTimes --type ~.model.OpenTime
-focus --class calendar.model.Heuriger
-field set --fieldName openTimes --type ~.model.OpenTime
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-26 22:05:08
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 00:58:18
-security setup
-// [failed] entity --class calendar.model.User
-entity --class calendar.model.Users
-field string --fieldName userName
-// [failed] field string password
-focus --class calendar.model.SystemUser
-field boolean --fieldName accountNonExpired
-field boolean --fieldName accountNonLocked
-field boolean --fieldName credentialsNonExpired
-field boolean --fieldName enabled
-entity --class calendar.model.SystemAuthority
-field string --fieldName authority
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 02:55:06
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2011-12-27 03:13:00
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2011-12-27 22:16:36
-// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-04 21:06:04
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-04 22:29:44
 web mvc all --package calendar.view
+quit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-04 22:34:14
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-04 22:34:22
+quit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-04 22:56:23
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-04 22:56:28
+quit
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-04 22:56:59
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-04 22:57:06

@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_calendar_model_SystemUser" modelAttribute="systemUser" path="/systemusers" render="${empty dependencies}" z="jkhxN5uUP+DvUc4aPaU++3UAG84=">
         <field:input field="password" id="c_calendar_model_SystemUser_password" z="UYQCKYEC/Z1BGdpsh7LhcJW75Qk="/>
+        <field:input field="username" id="c_calendar_model_SystemUser_username" z="XV1w16OE80fnEUl3qJ26/2mI0ts="/>
         <field:checkbox field="accountNonExpired" id="c_calendar_model_SystemUser_accountNonExpired" z="E4uIA5/JFDo2Z9OxGuG7EAm1mKs="/>
         <field:checkbox field="accountNonLocked" id="c_calendar_model_SystemUser_accountNonLocked" z="3n2GhW/Afa8gyw+X01Wa4Y4AbIo="/>
         <field:checkbox field="credentialsNonExpired" id="c_calendar_model_SystemUser_credentialsNonExpired" z="04cuUEMzOsk5WXFGQkMWAaG/2h4="/>

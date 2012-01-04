@@ -4,8 +4,8 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:list id="pl_calendar_model_Heuriger" items="${heurigers}" z="FfQlTZ27vHX8OxIi90InS2N/fpU=">
         <table:table data="${heurigers}" id="l_calendar_model_Heuriger" path="/heurigers" z="jUhbn1EtG4t1ANN97bA3gQoBq18=">
-            <table:column id="c_calendar_model_Heuriger_openTimes" property="openTimes" z="R/Dr7qTLDkFmqYuNAJA24Z0oa8A="/>
             <table:column id="c_calendar_model_Heuriger_name" property="name" z="F1954C1wQhH5q4UblEEBCq/yE60="/>
+            <table:column id="c_calendar_model_Heuriger_openTimes" property="openTimes" z="R/Dr7qTLDkFmqYuNAJA24Z0oa8A="/>
         </table:table>
     </page:list>
 </div>

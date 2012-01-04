@@ -11,6 +11,7 @@ privileged aspect SystemUser_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("Authorities: ").append(getAuthorities() == null ? "null" : getAuthorities().size()).append(", ");
         sb.append("Password: ").append(getPassword()).append(", ");
+        sb.append("UserId: ").append(getUserId()).append(", ");
         sb.append("Username: ").append(getUsername()).append(", ");
         sb.append("Version: ").append(getVersion()).append(", ");
         sb.append("AccountNonExpired: ").append(isAccountNonExpired()).append(", ");

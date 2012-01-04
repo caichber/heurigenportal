@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_calendar_model_SystemUser" object="${systemuser}" path="/systemusers" z="d8iAse+LE+ir7PXtyE1qU5fyDNQ=">
         <field:display field="password" id="s_calendar_model_SystemUser_password" object="${systemuser}" z="Sz770EpUJf/FFKhm8PIANX0Tn9M="/>
+        <field:display field="username" id="s_calendar_model_SystemUser_username" object="${systemuser}" z="fWJSq5+KvIspDT/kzeapw+7XZNY="/>
         <field:display field="accountNonExpired" id="s_calendar_model_SystemUser_accountNonExpired" object="${systemuser}" z="QYSEsO1plWndp6ZHE8mnHtJ4iWg="/>
         <field:display field="accountNonLocked" id="s_calendar_model_SystemUser_accountNonLocked" object="${systemuser}" z="0Un6KaZQwjzRfF6SiTzhf5T1Jw0="/>
         <field:display field="credentialsNonExpired" id="s_calendar_model_SystemUser_credentialsNonExpired" object="${systemuser}" z="p1wHDSFUfwxc0n9qMtiDLRhpk6A="/>
